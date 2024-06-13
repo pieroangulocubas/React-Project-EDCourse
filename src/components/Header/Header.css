@@ -1,0 +1,57 @@
+.header{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1a1a1a;
+}
+
+.header .container{
+    height: 100%;
+    max-width: 960px;
+    width: 100%;
+    padding:0 20px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.logo{
+    font-size: 1.125rem;
+}
+.menu{
+    list-style: none;
+    display: flex;
+}
+.menu li{
+    border-radius: .5rem 0 .5rem 0;
+}
+.menu li:hover{
+    background: #333;
+    transition: background .3s ease-in-out;
+}
+.menu a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem 0 .5rem 0;
+}
+
+/* Consulta de medios para ajustar el max-width en un breakpoint específico */
+@media screen and (min-width: 768px) {
+.header .container{
+    max-width: 1200px; /* Nuevo max-width para pantallas más grandes */
+}
+}
+
+/* Otra consulta de medios para un breakpoint diferente, si es necesario */
+@media screen and (min-width: 1200px) {
+.header .container{
+    max-width: 1400px; /* Nuevo max-width para pantallas aún más grandes */
+}
+}

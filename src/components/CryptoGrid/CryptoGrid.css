@@ -1,0 +1,24 @@
+.crypto-grid{
+    display: grid;
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+    padding:50px 20px;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill,minmax(14rem,1fr));
+    row-gap: 2.5rem;
+}
+
+  /* Consulta de medios para ajustar el max-width en un breakpoint específico */
+  @media screen and (min-width: 768px) {
+    .crypto-grid {
+      max-width: 1200px; /* Nuevo max-width para pantallas más grandes */
+    }
+  }
+  
+  /* Otra consulta de medios para un breakpoint diferente, si es necesario */
+  @media screen and (min-width: 1200px) {
+    .crypto-grid {
+      max-width: 1400px; /* Nuevo max-width para pantallas aún más grandes */
+    }
+  }
